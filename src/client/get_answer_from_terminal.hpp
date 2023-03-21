@@ -1,12 +1,13 @@
+#ifndef AAFT_GETANSWERTERMINAL_HPP
+#define AAFT_GETANSWERTERMINAL_HPP
+
+
 #include <iostream>
 #include <string>
 #include <memory>
 
 
-#ifndef AAFT_GETANSWERTERMINAL_HPP
-#define AAFT_GETANSWERTERMINAL_HPP
-
-namespace Client {
+namespace client {
     std::string get_answer_from_terminal(const std::string &command) {
         char buffer[4096];
         std::string result;
