@@ -8,7 +8,7 @@
 
 
 namespace client {
-    std::string get_answer_from_terminal(const std::string &command) {
+    std::string __fastcall get_answer_from_terminal(const std::string &command) {
         char buffer[4096];
         std::string result;
         std::unique_ptr<FILE, decltype(&pclose)> pipe(::popen(command.c_str(), "r"), pclose);
